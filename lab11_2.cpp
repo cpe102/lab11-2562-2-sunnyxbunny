@@ -3,6 +3,13 @@
 using namespace std;
 
 //Write function prototype here
+int gcd(int x,int y){
+	while(x%y!=0){
+		return gcd(y,x%y);
+	}
+return y;
+}
+
 
 int main(){
 	cout << gcd(25,15) << "\n";
